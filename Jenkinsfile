@@ -20,7 +20,7 @@ pipeline {
                         git config user.email sanjaysah@prodios.com
                         git config user.name er-sanjaysah
                         cat deployment.yml
-                        sed -i 's+ssah6694/devops.*+ssah6694/devops:${DOCKERTAG}+g' deployment.yml
+                        sed -i 's+ssah6694/devops.*+ssah6694/devops:${DOCKERTAG}+g' ./dev/deployment.yml
                         cat deployment.yml
                         git add .
                         git commit -m 'Jenkins update in manifest: ${env.BUILD_NUMBER}'
