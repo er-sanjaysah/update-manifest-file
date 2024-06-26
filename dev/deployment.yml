@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: go_app_container
-        image: ssah6694/devops:18
+        image: ssah6694/goimg:v4.0
         ports:
         - containerPort: 8080
